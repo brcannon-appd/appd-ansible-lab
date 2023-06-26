@@ -1,0 +1,19 @@
+---
+# tasks file for appdynamics-agents
+- name: Include variables for the controller settings
+  # Include all yaml files under the vars directory
+  include_vars:
+    dir: vars
+    extensions:
+      - 'yaml'
+      - 'yml'
+- include_role:
+    name: appdynamics.agents.java
+  vars:
+    agent_type: java
+    application_name: "{{ java_application_name }}" # agent default application
+    tier_name: "{{ java_tier_name }}" # agent default tier
+- include_role:
+    name: appdynamics.agents.machine
+  vars:
+    agent_type: machine

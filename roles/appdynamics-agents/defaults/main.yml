@@ -1,0 +1,8 @@
+---
+# defaults file for appdynamics-agents
+agent_version: 23.6.0
+java_application_name: 'AD-Ecommerce'
+java_tier_name: 'Ecommerce-Services'
+sim_enabled: false
+enable_analytics_agent: false
+linux_install_root: './AppDynamics' #here for demonstration purposes. defualt root is /opt/appdynamics

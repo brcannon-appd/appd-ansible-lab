@@ -1,0 +1,5 @@
+---
+- name: install appdynamics agents
+  hosts: localhost
+  roles:
+    - appdynamics-agents

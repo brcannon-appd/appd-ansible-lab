@@ -89,6 +89,6 @@ We can make use of the [Getting Started with Ansible](https://cloudacademy.com/l
 4) `sudo apt upgrade`
 5) `sudo apt install pip jq`
 6) `pip install --upgrade ansible`
-7) `mk dir roles`
+7) `mkdir roles`
 8) `cd roles`
 9)  Run steps above starting at [Install AppDynamics Collection](#install-appdynamics-collection)

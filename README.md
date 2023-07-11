@@ -11,13 +11,13 @@ ansible-galaxy collection install appdynamics.agents:23.4.2-867
 ```
 make get-agent.sh executable
 ```sh
-chmod a+x .ansible/collections/ansible_collections/appdynamics/agents/roles/common/files/get-agent.sh
+chmod a+x ~/.ansible/collections/ansible_collections/appdynamics/agents/roles/common/files/get-agent.sh
 ```
 # Create Role/Playbook for Agent Deployment
 ### Role:
 1) Create a role with the `ansible-galaxy` command inside the roles directory for ansible
 ```sh
-ansible-galaxy init appdynamics-agents
+ansible-galaxy init ./appdynamics-agents
 ```
 2) Update `vars/main.yml` with values for the AppDynamics Role. [AppDynamics Ansible Documentation](https://docs.appdynamics.com/appd/23.x/latest/en/application-monitoring/install-app-server-agents/agent-management/standalone-host-platforms/ansible) (Example for cSaaS controller)
 ```yml
